@@ -1,5 +1,8 @@
 # 🚢💥 HundirLaFlota 
 
+![Build Status](https://travis-ci.org/mariodiazzz11/HundirLaFlota.svg?branch=main)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
 **HundirLaFlota** es una implementación hecha en Java del clásico juego donde dos jugadores se enfrentan para hundir los barcos del otro. El juego se juega únicamente en la consola, sin necesidad de interfaz gráfica.
 
 ## 💡 Características
