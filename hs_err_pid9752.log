@@ -1,0 +1,210 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:44), pid=9752, tid=18940
+#
+# JRE version:  (20.0.2+9) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (20.0.2+9-78, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dfile.encoding=UTF-8 --module-path=C:\Users\MarioF\Documents\NetBeansProjects\PracticaHundirLaFlota\build\classes practicahundirlaflota.PracticaHundirLaFlota
+
+Host: Intel(R) Core(TM) i7-9700F CPU @ 3.00GHz, 8 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+Time: Thu Mar 21 13:38:18 2024 Hora estándar romance elapsed time: 0.005312 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000014cbc26ef40):  JavaThread "Unknown thread" [_thread_in_vm, id=18940, stack(0x0000003b2ee00000,0x0000003b2ef00000)]
+
+Stack: [0x0000003b2ee00000,0x0000003b2ef00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6bc25a]
+V  [jvm.dll+0x84971a]
+V  [jvm.dll+0x84b315]
+V  [jvm.dll+0x84ba13]
+V  [jvm.dll+0x280e4f]
+V  [jvm.dll+0xbce65]
+V  [jvm.dll+0x3294c5]
+V  [jvm.dll+0x8123aa]
+V  [jvm.dll+0x3c1261]
+V  [jvm.dll+0x7fe103]
+V  [jvm.dll+0x44ccaf]
+V  [jvm.dll+0x44e621]
+C  [jli.dll+0x5287]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17344]
+C  [ntdll.dll+0x526b1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007fff35a0b118, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000014cbc26ef40 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=18940, stack(0x0000003b2ee00000,0x0000003b2ef00000)]
+
+Threads with active compile tasks:
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x0000000000000000, size: 0 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 4 size 8 Array Of Cards #cards 16 size 48 Howl #buckets 8 coarsen threshold 3686 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 4096
+
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.003 Loaded shared library D:\java_netbeans\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff72b490000 - 0x00007ff72b4a0000 	D:\java_netbeans\bin\java.exe
+0x00007fff9fb10000 - 0x00007fff9fd08000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007fff9e560000 - 0x00007fff9e61d000 	C:\Windows\System32\KERNEL32.DLL
+0x00007fff9d4a0000 - 0x00007fff9d796000 	C:\Windows\System32\KERNELBASE.dll
+0x00007fff9d2e0000 - 0x00007fff9d3e0000 	C:\Windows\System32\ucrtbase.dll
+0x00007fff98d20000 - 0x00007fff98d39000 	D:\java_netbeans\bin\jli.dll
+0x00007fff85290000 - 0x00007fff852ab000 	D:\java_netbeans\bin\VCRUNTIME140.dll
+0x00007fff9e890000 - 0x00007fff9e940000 	C:\Windows\System32\ADVAPI32.dll
+0x00007fff9e940000 - 0x00007fff9e9de000 	C:\Windows\System32\msvcrt.dll
+0x00007fff9db60000 - 0x00007fff9dc00000 	C:\Windows\System32\sechost.dll
+0x00007fff9eed0000 - 0x00007fff9eff5000 	C:\Windows\System32\RPCRT4.dll
+0x00007fff9da60000 - 0x00007fff9da87000 	C:\Windows\System32\bcrypt.dll
+0x00007fff9e620000 - 0x00007fff9e7be000 	C:\Windows\System32\USER32.dll
+0x00007fff9d3e0000 - 0x00007fff9d402000 	C:\Windows\System32\win32u.dll
+0x00007fff9e520000 - 0x00007fff9e54b000 	C:\Windows\System32\GDI32.dll
+0x00007fff9d1c0000 - 0x00007fff9d2d7000 	C:\Windows\System32\gdi32full.dll
+0x00007fff9d810000 - 0x00007fff9d8ad000 	C:\Windows\System32\msvcp_win.dll
+0x00007fff87920000 - 0x00007fff87bba000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5\COMCTL32.dll
+0x00007fff96c90000 - 0x00007fff96c9a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007fff9dff0000 - 0x00007fff9e022000 	C:\Windows\System32\IMM32.DLL
+0x00007fff83760000 - 0x00007fff8376c000 	D:\java_netbeans\bin\vcruntime140_1.dll
+0x00007fff7e8b0000 - 0x00007fff7e93e000 	D:\java_netbeans\bin\msvcp140.dll
+0x00007fff34eb0000 - 0x00007fff35b48000 	D:\java_netbeans\bin\server\jvm.dll
+0x00007fff8c2d0000 - 0x00007fff8c2f7000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007fff96ca0000 - 0x00007fff96ca9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007fff9fa60000 - 0x00007fff9facb000 	C:\Windows\System32\WS2_32.dll
+0x00007fff9b090000 - 0x00007fff9b0a2000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007fff82270000 - 0x00007fff8227a000 	D:\java_netbeans\bin\jimage.dll
+0x00007fff88a00000 - 0x00007fff88be4000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007fff7d1e0000 - 0x00007fff7d214000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007fff9d410000 - 0x00007fff9d492000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007fff826a0000 - 0x00007fff826c6000 	D:\java_netbeans\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\java_netbeans\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5;D:\java_netbeans\bin\server
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 --module-path=C:\Users\MarioF\Documents\NetBeansProjects\PracticaHundirLaFlota\build\classes 
+java_command: practicahundirlaflota.PracticaHundirLaFlota
+java_class_path (initial): C:\Users\MarioF\Documents\NetBeansProjects\PracticaHundirLaFlota\build\classes
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 2097152                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 268435456                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4280287232                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 2097152                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 4280287232                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\AutoFirma\AutoFirma;C:\Users\MarioF\AppData\Local\Microsoft\WindowsApps;
+USERNAME=MarioF
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 13, GenuineIntel
+TMP=C:\Users\MarioF\AppData\Local\Temp
+TEMP=C:\Users\MarioF\AppData\Local\Temp
+
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+OS uptime: 0 days 5:05 hours
+
+CPU: total 8 (initial active 8) (8 cores per cpu, 1 threads per core) family 6 model 158 stepping 13 microcode 0xd6, cx8, cmov, fxsr, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, fma, vzeroupper, clflush, clflushopt, rdtscp, f16c
+
+Memory: 4k page, system-wide physical 16326M (8692M free)
+TotalPageFile size 44936M (AvailPageFile size 5M)
+current process WorkingSet (physical memory assigned to process): 9M, peak: 9M
+current process commit charge ("private bytes"): 17M, peak: 18M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (20.0.2+9-78) for windows-amd64 JRE (20.0.2+9-78), built on 2023-06-14T10:08:48Z by "mach5one" with MS VC++ 17.1 (VS2022)
+
+END.
